@@ -1,0 +1,30 @@
+<section class="form-container">
+<div class="title-control">
+  <div class="form__logo">
+    <h2>Volleyball Player Assignment</h2>
+  </div>
+  <p>Free volleyball players database for consult</p>
+</div>
+<form action="/players/insertplayer" method="POST" >
+  <div class="form-control">
+    <label for="name">Name: </label>
+    <input type="text" name="name" placeholder="E.g: Sérgio Dutra" aria-required="true" required>
+</div>
+
+  <div class="form-control">
+    <label for="position">Position:</label>
+    <input type="text" name="position" placeholder="E.g: Middle Hitter" aria-required="true" required>
+  </div>
+
+  <div class="form-control">
+    <label for="activity">Status:</label>
+    <input type="text" name="activity" placeholder="E.g: Retired / Playing at " aria-required="true" required> 
+  </div>
+
+  <div class="form-control">
+    <textarea  rows="8" cols="80" placeholder="Description" name="description" maxlength="500"></textarea>
+  </div>
+
+  <input type="submit" value="Send">
+</form>
+</section>

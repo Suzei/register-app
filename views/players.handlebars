@@ -1,0 +1,18 @@
+<section class="player">
+  {{#if players}}
+    {{#each players}}
+   <div class="player__card">
+     <div class="player__image">
+       <img src="" alt="">
+     </div>
+     <div class="player__info">
+      <a href="/players/{{this.id}}"><h3>{{this.name}}</h3></a>
+      <span>{{this.position}} </span>
+      <small>{{this.activity}}</small>
+    </div>
+   </div>
+{{/each}}
+{{else}}
+<h2>You dont registrated any player</h2>
+</section>
+  {{/if}}
